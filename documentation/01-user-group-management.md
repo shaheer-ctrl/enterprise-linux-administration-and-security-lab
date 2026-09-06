@@ -100,8 +100,8 @@ sudo groupadd -g 1004 technova_support**
 
 **sudo useradd -m -g technova_developers alice
 sudo useradd -m -g technova_operations james**
-# (Repeated for all 8 employees)
-
+****(Repeated for all 8 employees)
+********
 ### Supplementary Group Assignment
 
 **sudo usermod -aG technova_security alice
