@@ -18,10 +18,9 @@ starting and managing services and other system components.
 
 The systemd process was verified using:
 
-```bash
 ps -p 1 -o pid,comm,args
 
-2. Checking Service Status
+## 2. Checking Service Status
 
 The cron service was selected as the example service for
 testing.
@@ -52,4 +51,3 @@ Observation
 
 The cron service was running normally and was configured to
 start automatically
-
