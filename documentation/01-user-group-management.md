@@ -100,15 +100,16 @@ sudo groupadd -g 1004 technova_support**
 
 **sudo useradd -m -g technova_developers alice
 sudo useradd -m -g technova_operations james**
-****(Repeated for all 8 employees)
-********
+
+(Repeated for all 8 employees)
+
 ### Supplementary Group Assignment
 
 **sudo usermod -aG technova_security alice
 sudo usermod -aG technova_security james
 sudo usermod -aG technova_operations charlie
-sudo usermod -aG technova_operations anthony**
-
+sudo usermod -aG technova_operations anthony
+**
 ### Verification
 User and group configurations were verified by querying the system's identity databases:
 
