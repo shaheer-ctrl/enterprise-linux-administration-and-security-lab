@@ -162,4 +162,4 @@ Access Control → Monitoring → Service Management → Logging → Auditing
 ## Disclaimer
 
 This project was performed in a controlled WSL2 laboratory
-environment for educational and portfolio purposes.
+environment for educational purposes.
