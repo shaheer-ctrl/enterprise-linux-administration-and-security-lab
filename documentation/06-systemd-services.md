@@ -24,8 +24,8 @@ ps -p 1 -o pid,comm,args
 The cron service was selected as the example service for
 testing.
 
-Its status was checked using:
-
+**Its status was checked using:
+**
 systemctl status cron
 The service was found to be:
 
@@ -48,3 +48,21 @@ Observation
 
 The cron service was running normally and was configured to
 start automatically
+
+## 3. Checking Service State
+The following commands were used to check the current state:
+
+systemctl is-active cron
+
+Result: **active**
+
+The startup configuration was checked using:
+systemctl is-enabled cron
+
+Result:
+
+enabled
+Difference
+Command	Purpose
+systemctl is-active	Checks whether the service is currently running
+systemctl is-enabled	Checks whether the service is configured to start automatically
