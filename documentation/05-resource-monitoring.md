@@ -214,3 +214,24 @@ at zero.
 
 Overall, the system showed no significant resource pressure
 during the baseline monitoring period.
+
+## Security & Administration Relevance
+
+Resource monitoring is an important Linux administration and
+security capability.
+
+Regular monitoring can help identify:
+
+CPU exhaustion
+Memory pressure
+Swap activity
+Disk exhaustion
+Inode exhaustion
+Unexpected large files
+Resource-intensive processes
+I/O bottlenecks
+Abnormal system behavior
+
+From a security perspective, unusual resource consumption can
+also be an indicator of unauthorized processes, malicious
+activity, or compromised services.
