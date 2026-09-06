@@ -19,6 +19,9 @@ identified using:
 
 ```bash
 lscpu | grep -E '^(CPU\(s\)|Model name|Thread|Core|Socket)'
+
+#Observed Configuration
+
 | Resource         | Value                        |
 | ---------------- | ---------------------------- |
 | Logical CPUs     | 8                            |
