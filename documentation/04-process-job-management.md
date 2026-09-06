@@ -103,3 +103,13 @@ cat nohup-test.log**
 
 The empty log file was expected because the sleep command
 does not generate output.
+
+## Result
+
+Process and job management techniques were successfully
+demonstrated, including process inspection, signal handling,
+foreground/background job control, and persistent background
+execution.
+
+The tests confirmed the ability to safely identify, monitor,
+control, and terminate Linux processes.
