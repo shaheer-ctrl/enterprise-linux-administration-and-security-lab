@@ -202,3 +202,15 @@ si   0
 so   0
 wa   0
 id   99-100
+
+## Observation
+
+The low r value indicated minimal CPU scheduling demand.
+Both si and so remained at zero, indicating no active
+swap-in or swap-out activity.
+
+CPU idle time remained around 99–100%, and I/O wait remained
+at zero.
+
+Overall, the system showed no significant resource pressure
+during the baseline monitoring period.
