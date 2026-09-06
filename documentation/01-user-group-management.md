@@ -92,36 +92,45 @@ Eight standard employee accounts were provisioned within the `1001–1008` UID r
 ### Group Creation
 
 **sudo groupadd -g 1001 technova_developers
+
 sudo groupadd -g 1002 technova_operations
+
 sudo groupadd -g 1003 technova_security
+
 sudo groupadd -g 1004 technova_support**
 
 ### User Provisioning
 
-**sudo useradd -m -g technova_developers alice
-sudo useradd -m -g technova_operations james**
+sudo useradd -m -g technova_developers alice
+
+sudo useradd -m -g technova_operations james
 
 (Repeated for all 8 employees)
 
 ### Supplementary Group Assignment
 
-**sudo usermod -aG technova_security alice
+sudo usermod -aG technova_security alice
+
 sudo usermod -aG technova_security james
+
 sudo usermod -aG technova_operations charlie
+
 sudo usermod -aG technova_operations anthony
-**
+
 ### Verification
 User and group configurations were verified by querying the system's identity databases:
 
 Verify user identity, UID, primary GID, and supplementary groups
 
-**id alice
-id james**
+id alice
+
+id james
 
 Verify department group configurations and supplementary members
 
-**getent group technova_security
-getent group technova_operations**
+getent group technova_security
+
+getent group technova_operations
 
 Result & Summary
 The TechNova Systems organizational structure was successfully mapped to the Linux environment using native user and group management utilities. By explicitly defining primary groups based on departments and carefully assigning secondary groups for cross-functional tasks, a strict Role-Based Access Control (RBAC) foundation was established.
