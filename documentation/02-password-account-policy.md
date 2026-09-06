@@ -64,22 +64,29 @@ sudo chage -l alice
 
 ### Account Lock & Unlock
 Account locking was tested using:
+
 sudo passwd -l alice
+
 sudo passwd -S alice
 
 The account was then restored:
+
 sudo passwd -u alice
 sudo passwd -S alice
 
 ### Account Expiration Testing
+
 Account expiration was temporarily configured for testing:
+
 sudo chage -E 2026-12-31 julia
 sudo chage -l julia
 
 The expiration was then removed:
+
 sudo chage -E -1 julia
 ### Verification
 Password and account policies were verified using:
+
 chage -l alice
 chage -l julia
 
